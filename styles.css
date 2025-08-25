@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    display: flex;
 }
 
 #open-paragraph {
@@ -10,10 +11,52 @@ body {
 
 #open-paragraph #paragraph-1 {
     margin-top: 100px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 150px;
 }
 
 #open-paragraph #paragraph-2 {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: 20px;
+}
+
+#left-part {
+    max-width: 35%;
+}
+
+#cover-image {
+    max-width: 100%;
+    max-height: auto;
+}
+
+#sign-up-info {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+#sign-up-info #title {
+    margin-bottom: 10px;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 50px;
+}
+
+label {
+  display: block;
+}
+
+#submit-button {
+    margin-left: 20px;
+}
+
+#login-question {
+    margin-left: 20px;
 }

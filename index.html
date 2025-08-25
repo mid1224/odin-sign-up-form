@@ -7,18 +7,56 @@
     <title>Odin Sign-up Form</title>
 </head>
 <body>
-    <div id="open-paragraph">
-        <div id="paragraph-1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</div>
-        <div id="paragraph-2">You <i>know</i> you want to.</div>
+    <div id="left-part">
+        <img id="cover-image" src="cover.jpg" alt="Cake Image">
     </div>
 
-    <div id="sign-up-info">
-        <div id="title">Let's do this!</div>
-    </div>
+    <div id="right-part">
+        <div id="open-paragraph">
+            <div id="paragraph-1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</div>
+            <div id="paragraph-2">You <i>know</i> you want to.</div>
+        </div>
 
-    <div id="finalize-section">
-        <button id="submit-button">Create Account</button>
-        <div id="log-in-question">Already have an account? <a href="login_page_link">Log in</a></div>
+        <div id="sign-up-info">
+            <div id="title">Let's do this!</div>
+
+            <form id="sign-up-form" action="#" method="post">
+                <p>
+                <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name">
+                </p>
+
+                <p>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name">
+                </p>
+
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email">
+                </p>
+
+                <p>
+                    <label for="phone-num">PHONE NUMBER</label>
+                    <input type="number" id="phone-num">
+                </p>
+
+                <p>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                </p>
+
+                <p>
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" id="password-confirm">
+                </p>
+            </form>
+        </div>
+
+        <div id="finalize-section">
+            <button id="submit-button">Create Account</button>
+            <div id="login-question">Already have an account? <a href="login_page_link">Log in</a></div>
+        </div>
     </div>
 
     <script src="main.js"></script>
