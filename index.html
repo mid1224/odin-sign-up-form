@@ -9,6 +9,10 @@
 <body>
     <div id="left-part">
         <img id="cover-image" src="cover.jpg" alt="Cake Image">
+        <div id="sidebar">
+            <img id="sidebar-icon" src="image-sidebar.png">
+            <div id="sidebar-title">ODIN</div>
+        </div>
     </div>
 
     <div id="right-part">
@@ -21,41 +25,47 @@
             <div id="title">Let's do this!</div>
 
             <form id="sign-up-form" action="#" method="post">
-                <p>
-                <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
-                </p>
+                <div class="info-row">
+                    <p>
+                    <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" placeholder="John">
+                    </p>
 
-                <p>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name">
-                </p>
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" placeholder="Doe">
+                    </p>
+                </div>
 
-                <p>
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email">
-                </p>
+                <div class="info-row">
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" placeholder="abc@gmail.com">
+                    </p>
 
-                <p>
-                    <label for="phone-num">PHONE NUMBER</label>
-                    <input type="number" id="phone-num">
-                </p>
+                    <p>
+                        <label for="phone-num">PHONE NUMBER</label>
+                        <input type="number" id="phone-num" placeholder="098xxxxxxx">
+                    </p>
+                </div>
 
-                <p>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
-                </p>
+                <div class="info-row">
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" placeholder="Must contain numbers">
+                    </p>
 
-                <p>
-                    <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="password-confirm">
-                </p>
+                    <p>
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="password-confirm" placeholder="Repeat your password">
+                    </p>
+                </div>
+
+                <div id="finalize-section">
+                    <button type="submit" id="submit-button">Create Account</button>
+                    <div id="login-question">Already have an account? <a href="https://www.google.com/">Log in</a></div>
+                </div>
             </form>
-        </div>
-
-        <div id="finalize-section">
-            <button id="submit-button">Create Account</button>
-            <div id="login-question">Already have an account? <a href="login_page_link">Log in</a></div>
         </div>
     </div>
 
