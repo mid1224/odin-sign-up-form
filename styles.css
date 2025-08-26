@@ -36,7 +36,10 @@ body {
 
 #left-part {
     max-width: 35%;
-    position: relative;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    align-self: flex-start;
 }
 
 #cover-image {
@@ -91,6 +94,7 @@ body {
     margin-bottom: 10px;
     font-size: 1.5rem;
     font-weight: bold;
+    color: rgb(216, 82, 82);
 }
 
 #sign-up-form {
@@ -143,7 +147,7 @@ input:focus {
 }
 
 #submit-button {
-    margin-top: 20px;
+    margin-top: 30px;
 
     font-family:'delius', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -159,5 +163,30 @@ input:focus {
 }
 
 #login-question {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+#login-link {
+    text-decoration: none;
+    color: rgb(216, 82, 82);
+}
+#login-link:hover {
+    text-decoration: underline;
+}
+
+#cover-image-credit {
+    position: absolute;
+    bottom: 20px;
+
+    text-align: center;
+
+    left: 0;
+    right: 0;
+
+    font-family:'delius', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:gainsboro;
+}
+
+.credit-link {
+    color: white;
 }

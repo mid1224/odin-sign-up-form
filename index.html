@@ -13,6 +13,12 @@
             <img id="sidebar-icon" src="image-sidebar.png">
             <div id="sidebar-title">ODIN</div>
         </div>
+        <div id="cover-image-credit">
+            Photo by
+            <a class="credit-link" href="https://unsplash.com/@christiannkoepke" target="_blank">Christiann Koepke</a>
+            on
+            <a class="credit-link" href="https://unsplash.com/photos/cake-with-strawberry-toppings-AigxB1zfRVo" target="_blank">Unsplash</a>
+        </div>
     </div>
 
     <div id="right-part">
@@ -28,42 +34,42 @@
                 <div class="info-row">
                     <p>
                     <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" placeholder="John">
+                        <input type="text" id="first-name" placeholder="John" required>
                     </p>
 
                     <p>
                         <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name" placeholder="Doe">
+                        <input type="text" id="last-name" placeholder="Doe" required>
                     </p>
                 </div>
 
                 <div class="info-row">
                     <p>
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" placeholder="abc@gmail.com">
+                        <input type="email" id="email" placeholder="abc@gmail.com" required>
                     </p>
 
                     <p>
                         <label for="phone-num">PHONE NUMBER</label>
-                        <input type="number" id="phone-num" placeholder="098xxxxxxx">
+                        <input type="number" id="phone-num" placeholder="098xxxxxxx" required>
                     </p>
                 </div>
 
                 <div class="info-row">
                     <p>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" placeholder="Must contain numbers">
+                        <input type="password" id="password" placeholder="Must contain numbers" minlength="8" pattern=".*\d" required>
                     </p>
 
                     <p>
                         <label for="password-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" id="password-confirm" placeholder="Repeat your password">
+                        <input type="password" id="password-confirm" placeholder="Repeat your password" required>
                     </p>
                 </div>
 
                 <div id="finalize-section">
                     <button type="submit" id="submit-button">Create Account</button>
-                    <div id="login-question">Already have an account? <a href="https://www.google.com/">Log in</a></div>
+                    <div id="login-question">Already have an account? <a id="login-link" href="https://www.google.com/">Log in</a></div>
                 </div>
             </form>
         </div>
